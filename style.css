@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Montserrat:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FFD23F;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wip {
+  font-size: 6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #540D6E;
+}
+
+h1 {
+  text-align: center;
+}
+
+.phrase {
+  font-size: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: #540D6E;
+  margin-top: 1rem;
+}
+
+@media(min-width: 480px) {
+  .wip {
+    font-size: 7rem;
+  }
+  .phrase {
+    font-size: 2.3rem;
+  }
+}
+
+@media(min-width: 768px) {
+  .wip {
+    font-size: 10rem;
+  }
+  .phrase {
+    font-size: 2.8rem;
+  }
+}
+
+@media(min-width: 1024px) {
+.wip {
+  font-size: 11rem;
+}
+.phrase {
+  font-size: 3rem;
+}
+}
