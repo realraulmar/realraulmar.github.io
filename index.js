@@ -9,13 +9,14 @@ let i = 0
 
 class TypingPhrases {
   
-  constructor() {
+  constructor(input) {
     this.phraseContainer = document.querySelector('.phrase')
+    this.input = input
     window.onload = this.initPhrases()
   }
 
   initPhrases() {
-    this.phrases = [...PHRASES]
+    this.phrases = [...this.input]
     
     setInterval(() => {
       this.renderPhrase()
@@ -55,4 +56,4 @@ class TypingPhrases {
   }
 }
 
-const startTyping = new TypingPhrases()
+const startTyping = new TypingPhrases(PHRASES)
